@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Dinner from './Dinner.js'
+// import Dinner from './Dinner.js'
+import { initNotification } from './services/firebaseService'
 
 function App() {
   return (
-    <Dinner  dishName = "chicken  biryani" />
+    // <Dinner dishName="chicken  biryani" />
+    <button onClick={initNotification}> configure notifications </button>
   );
 }
 
